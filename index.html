@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextLock</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="particle-container"></div> <!-- Partículas dinámicas -->
+
+  <div class="container mt-5 p-5 rounded shadow-lg text-center main-container">
+    <h1 class="fantasy-title mb-4">TextLock</h1>
+    <p class="warning-text">No se aceptan mayúsculas ni caracteres especiales.</p>
+
+    <!-- Caja de entrada -->
+    <textarea name="encriptar" id="textareaEntrada" class="form-control mb-3 fantasy-textarea" placeholder="Ingresa tu mensaje aquí"></textarea>
+
+    <!-- Imagen del candado -->
+    <div class="lock-container">
+      <img src="assets/lock.svg" alt="Candado" class="lock-image">
+    </div>
+
+    <!-- Caja de texto encriptado (oculta inicialmente) -->
+    <textarea name="mostrarTexto" id="textareaMostrarTexto" class="form-control mb-3 d-none fantasy-textarea" placeholder="Texto cifrado/descifrado aparecerá aquí"></textarea>
+
+    <div class="button-container text-center">
+      <button onclick="cifrarTexto()" class="interact btn btn-primary mx-2 fantasy-btn cifrar "> Cifrar</button>
+      <button onclick="descifrarTexto()" class="interact btn btn-secondary mx-2 fantasy-btn descifrar"> Descifrar</button>
+      <button onclick="copiarTexto()" class="interact btn btn-info mx-2 fantasy-btn copiar"> Copiar</button>
+      <button onclick="limpiarTexto()" class="interact btn btn-warning mx-2 fantasy-btn limpiar"> Limpiar</button>
+    </div>
+    <footer class="text-center mt-4">
+      <a href="https://co.linkedin.com/in/lizeth-stefany-vanegas-suarez" class="text-dark">By Lizeth Stefany Vanegas Suarez</a>
+      <div class="text-muted">2024</div>
+    </footer>
+  </div>
+
+  <div id="custom_cursor" class="customCursor_cursorContainer">
+    <div class="customCursor_background"></div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script> <!-- Efectos de animación -->
+</body>
+</html>
