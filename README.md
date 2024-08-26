@@ -13,9 +13,6 @@ TextLock es una aplicación web para cifrar y descifrar mensajes. Con un diseño
 - Iconos de Font Awesome y tipografías de Google Fonts.
 
 **Uso**:  
-1. Clona el repositorio:  
-   `git clone https://github.com/tu-usuario/textlock.git`
-2. Abre el archivo `index.html` en tu navegador.  
-3. Ingresa el texto, cifra, descifra, copia o limpia el texto según lo necesites.
+Ingresa el texto, cifra, descifra, copia o limpia el texto según lo necesites.
 
 **Desarrollado por**: Lizeth Stefany Vanegas Suarez (2024)
